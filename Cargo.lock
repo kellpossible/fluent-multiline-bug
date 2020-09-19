@@ -9,8 +9,7 @@ checksum = "08c48aae112d48ed9f069b33538ea9e3e90aa263cfa3d1c24309612b1f7472de"
 [[package]]
 name = "fluent"
 version = "0.12.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3c3b6132d1377d8776409a337c6851d342aee4e85277c96ecd2755c4e0efde1d"
+source = "git+https://github.com/projectfluent/fluent-rs#4a1119b194c4aa965a6512a3f2c88836ffec2640"
 dependencies = [
  "fluent-bundle",
  "unic-langid",
@@ -19,8 +18,7 @@ dependencies = [
 [[package]]
 name = "fluent-bundle"
 version = "0.12.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "01a094d494ab2ed06077e9a95f4e47f446c376de95f6c93045dd88c499bfcd70"
+source = "git+https://github.com/projectfluent/fluent-rs#4a1119b194c4aa965a6512a3f2c88836ffec2640"
 dependencies = [
  "fluent-langneg",
  "fluent-syntax",
@@ -51,8 +49,7 @@ dependencies = [
 [[package]]
 name = "fluent-syntax"
 version = "0.9.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ac0f7e83d14cccbf26e165d8881dcac5891af0d85a88543c09dd72ebd31d91ba"
+source = "git+https://github.com/projectfluent/fluent-rs#4a1119b194c4aa965a6512a3f2c88836ffec2640"
 
 [[package]]
 name = "fxhash"
@@ -66,8 +63,7 @@ dependencies = [
 [[package]]
 name = "intl-memoizer"
 version = "0.5.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8a0ed58ba6089d49f8a9a7d5e16fc9b9e2019cdf40ef270f3d465fa244d9630b"
+source = "git+https://github.com/projectfluent/fluent-rs#4a1119b194c4aa965a6512a3f2c88836ffec2640"
 dependencies = [
  "type-map",
  "unic-langid",
@@ -85,9 +81,9 @@ dependencies = [
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.19"
+version = "1.0.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "04f5f085b5d71e2188cb8271e5da0161ad52c3f227a661a3c135fdf28e258b12"
+checksum = "36e28516df94f3dd551a587da5357459d9b36d945a7c37c3557928c1c2ff2a2c"
 dependencies = [
  "unicode-xid",
 ]
@@ -136,9 +132,9 @@ checksum = "a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3"
 
 [[package]]
 name = "syn"
-version = "1.0.39"
+version = "1.0.41"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "891d8d6567fe7c7f8835a3a98af4208f3846fba258c1bc3c31d6e506239f11f9"
+checksum = "6690e3e9f692504b941dc6c3b188fd28df054f7fb8469ab40680df52fdcc842b"
 dependencies = [
  "proc-macro2",
  "quote",

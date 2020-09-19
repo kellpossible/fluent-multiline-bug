@@ -3,6 +3,8 @@ use fluent_syntax::ast;
 fn main() {
     let resource_string = std::fs::read_to_string("test.ftl").unwrap();
 
+    let resource_string = resource_string.replace("\u{000D}\n", "\n");
+
     println!("Contents of test.ftl:\n\n{}\n", &resource_string);
 
     let resource = match fluent::FluentResource::try_new(resource_string) {
@@ -22,16 +24,11 @@ fn main() {
 }
 
 fn find_entry<'a>(resource: &'a fluent::FluentResource, id: &str) {
-    if let Some(entry) = resource.ast().body.iter().find(|resource_entry| {
-        match resource_entry {
-            ast::ResourceEntry::Entry(entry) => {
-                match entry {
-                    ast::Entry::Message(message) => {
-                        message.id.name == id
-                    }
-                    _ => false,
-                }
-            },
+    if let Some(entry) = resource.ast().body.iter().find(|entry| {
+        match entry {
+            ast::Entry::Message(message) => {
+                message.id.name == id
+            }
             _ => false,
         }
     }) {

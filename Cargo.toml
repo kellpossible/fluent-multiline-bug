@@ -7,5 +7,5 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-fluent = "0.12"
-fluent-syntax = "0.9"
+fluent = { git = "https://github.com/projectfluent/fluent-rs" }
+fluent-syntax = { git = "https://github.com/projectfluent/fluent-rs" }
