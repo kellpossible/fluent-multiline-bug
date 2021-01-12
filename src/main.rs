@@ -17,11 +17,8 @@ fn main() {
         }
     };
 
+    find_entry(&resource, "multiline-message-indented-breaks");
     find_entry(&resource, "multiline-message");
-    find_entry(&resource, "multiline-message-break");
-    find_entry(&resource, "multiline-message-breaks");
-    find_entry(&resource, "multiline-message-breaks-spaces");
-    find_entry(&resource, "multiline-message-args");
 }
 
 fn find_entry<'a>(resource: &'a fluent::FluentResource, id: &str) {
